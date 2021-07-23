@@ -58,6 +58,16 @@ public:
         result.rutGon();
         return result;
     }
+
+    Fraction operator * (Fraction b) {
+        Fraction result;
+
+        result.changeNumerator(this->numerator* b.getNumerator());
+        result.changeDenominator(this->denominator*b.getDenominator());
+
+        result.rutGon();
+        return result;
+    }
 };
 Fraction::Fraction(){};
 
@@ -74,9 +84,13 @@ Fraction::~Fraction()
 
 
 int main () {
+
     Fraction a = Fraction(2,5);
     Fraction b = Fraction(3,2);
 
     (a+b).Print();
+    printf("\n");
+    (a*b).Print();
+
     return 0;
 }
