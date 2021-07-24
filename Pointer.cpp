@@ -11,7 +11,7 @@ int main () {
     // *pointer = &value;
     
     // Đúng! pointer cần 1 địa chỉ, &value là địa chỉ của biến value.
-    // pointer = &value;
+    pointer = &value;
     
     // Đúng! *pointer là giá trị của biến mà con trỏ đang trỏ tới, và value cũng là giá trị (không phải địa chỉ).
     *pointer = value;
